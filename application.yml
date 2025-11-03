@@ -1,0 +1,29 @@
+# ==========================
+# Global Configuration
+# ==========================
+spring:
+  application:
+    name: global-config
+  cloud:
+    config:
+      profile: default
+
+# ==========================
+# Eureka Server
+# ==========================
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+# ==========================
+# Actuator (giám sát service)
+# ==========================
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
