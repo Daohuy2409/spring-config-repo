@@ -3,11 +3,6 @@ server:
 spring:
   application:
     name: user-service
-  zipkin:
-    base-url: http://localhost:9411
-  sleuth:
-    sampler:
-      probability: 1.0   # 1.0 = thu thập 100% request, có thể giảm xuống 0.1 để tiết kiệm
 eureka:
   client:
     service-url:
